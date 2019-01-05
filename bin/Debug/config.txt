@@ -1,0 +1,53 @@
+// fill flows:
+            double[] cden = { 0.07053, -1.85373, 5.26696, 8.11192 };
+            double[] cdir = { 1, 0, 0.3, 0.05 };
+            double[] cpd = { 0, 1, 0.1 };
+            double[] cdn = { 1.03918, -0.03918, -0.30506 };
+            double[] cre = { 1.03283, -1.02041, 0.3184 };
+
+            List<FunCoef> function = new List<FunCoef>();
+            List<List<int>> factor = new List<List<int>>();
+            List<double> weight = new List<double>() ;
+            //den,ds,dn,pd,re,dir
+            FunCoef fden = new FunCoef();
+            FunCoef fds = new FunCoef();
+            FunCoef fdn = new FunCoef();
+            FunCoef fpd = new FunCoef();
+            FunCoef fre = new FunCoef();
+            FunCoef fdir = new FunCoef();
+            fden.func = 1;
+            fden.coef = cden;
+            fds.func = -1;
+            fdn.func = 0;
+            fdn.coef = cdn;
+            fpd.func = 0;
+            fpd.coef = cpd;
+            fre.func = 0;
+            fre.coef = cre;
+            fdir.func = 2;
+            fdir.coef = cdir;
+            function.Add(fden);
+            function.Add(fds);
+            function.Add(fdn);
+            function.Add(fpd);
+            function.Add(fre);
+            function.Add(fdir);
+
+            List<int> factor1 = new List<int>();
+            List<int> factor2 = new List<int>();
+            List<int> factor3 = new List<int>();
+
+            factor1.Add(5);
+            factor1.Add(2);
+            factor2.Add(5);
+            factor2.Add(3);
+            factor3.Add(5);
+            factor3.Add(4);
+
+            factor.Add(factor1);
+            factor.Add(factor2);
+            factor.Add(factor3);
+
+            weight.Add(0.25);
+            weight.Add(0.25);
+            weight.Add(0.5);
