@@ -1,5 +1,5 @@
 # FRCA: A Novel Flexible Routing Computing Approach for Wireless Sensor Networks
-If you decided to use this simulator for academic issues, please support us by citing any of the following works:
+ This version of Wireless Sensor Networks simulator is developed based on [https://github.com/howbani/WSNSIM]. If you decided to use this simulator for academic issues, please support us by citing any of the following works:
 
 [1] P. Liu, X. Wang, A. Hawbani, O. Busaileh, L. Zhao and A. Y. Al-Dubai, "FRCA: A Novel Flexible Routing Computing Approach for Wireless Sensor Networks," in IEEE Transactions on Mobile Computing.
 doi: 10.1109/TMC.2019.2928805
